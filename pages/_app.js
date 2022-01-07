@@ -37,6 +37,7 @@ function MyApp({ Component, pageProps }) {
       console.log('data: ', data)
       if (data.name) setName(data.name)
       if (data.avatar) setImage(data.avatar)
+      if (data.description) setDescription(data.description)
     } catch (error) {
       console.log('error: ', error)
       setLoaded(true)
@@ -55,7 +56,7 @@ function MyApp({ Component, pageProps }) {
     const did = new DID({
       provider: threeIdConnect.getDidProvider(),
       resolver: {
-        ...ThreeIdConnect.getResolver(ceramic)
+        ...ThreeIdResolver.getResolver(ceramic)
       }
     })
 
@@ -103,13 +104,15 @@ function MyApp({ Component, pageProps }) {
         <div>
           <input placeholder='Name' onChange={e => setName(e.target.value)} />
           <input placeholder='Profile Image' onChange={e => setImage(e.target.value)} />
-          <button onClick={readProfile}>Read Profile</button>
-
-          <button onClick={updateProfile}>Set Profile</button>
-
+          <input placeholder='Description' onChange={e => setDescription(e.target.value)} />
+          <div>  
+            <button onClick={readProfile}>Read Profile</button>
+            <button onClick={updateProfile}>Set Profile</button>
+          </div>
           {name && <h3>{name}</h3>}
           {image && <img style={{ width: '400px' }} src={image} />}
-          {(!image && !name && loaded) && <h4>No profile founded, but you can add one.</h4>}
+          {description && <h3>{description}</h3>}
+          {(!image && !name  && !description && loaded) && <h4>No profile founded, but you can add one.</h4>}
         </div>
       </nav>
       <Component {...pageProps} />
