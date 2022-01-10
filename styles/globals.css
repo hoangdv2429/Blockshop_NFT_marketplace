@@ -1,3 +1,234 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* home */
+.home, .home-2, .home-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.products{
+    width: 1200px;
+}
+.item-new, .items-my-digital, .items-created-product, .items-sold-product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.product{
+    width: 360px;
+    margin: 15px;
+    border: 0.5px solid rgb(136, 136, 136);
+    border-radius: 2%;
+}
+.products-title, .items-create, .my-digital, .items-sold{
+    text-align: center;
+    margin-top: 40px;
+}
+.products-title p, .items-create p, .my-digital p, .items-sold p{
+    font-size: 35px;
+    font-weight: 500;
+    color: black;
+    border-bottom: 0.5px solid #ccc;
+    padding-bottom: 30px;
+}
+.product button:hover{
+    background-color: aquamarine;
+}
+.image-product{
+    width: 100%;
+    height: 250px;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 2% 2% 0% 0%
+
+}
+#black-p{
+    border-radius: 0% 0% 2% 2%;
+}
+/* home */
+/* header */
+.header-- .logo{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+    color:rgb(48, 48, 48);
+    padding: 15px 0px 5px 30px;
+}
+#head{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 91, 107);
+}
+#head a{
+    padding: 10px 20px;
+    color: antiquewhite;
+}
+#head a:hover{
+    color: rgb(95, 201, 187);
+}
+/* header */
+/* footer */
+
+footer .foot-content {
+  padding: 50px 0;
+  background-image: url(https://i.bloganchoi.com/bloganchoi.com/wp-content/uploads/2020/09/nh-nen-nhung-dam-may-cute-696x385.jpg?fit=696%2C20000&quality=95&ssl=1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+footer .foot-content .ft-bg-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+footer .foot-content .footer-grid {
+  position: relative;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+}
+
+.footer-grid-item h3 {
+  color: #fff;
+  padding-left: 30px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-grid-item li {
+  margin: 0px 0px 5px 30px;
+}
+.ft-social-network{
+    margin-left: 30px;
+}
+.footer-grid-item li a, .footer-grid-item ul div a, .footer-grid-item ul p {
+  color: #fff;
+}
+
+.footer-grid-item li a:hover, .footer-grid-item ul div a:hover {
+  color:aquamarine;
+}
+.footer-grid-item form{
+    margin-left: 30px;
+}
+.footer-grid-item ul div {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.footer-grid-item ul div i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.footer-grid-item .footer-subscribe p {
+  color: #fff;
+  margin: 0 0 15px 0;
+}
+
+.footer-grid-item .footer-subscribe .subscribe-form input {
+  color: #333;
+}
+
+.footer-grid-item .footer-subscribe .subscribe-form button {
+  color: #fff;
+  background-color: #333;
+}
+
+.footer-grid-item .footer-subscribe .subscribe-form button:hover {
+  background-color: #222;
+}
+
+.ft-social-network a {
+  display: inline-block;
+  border:  none;
+  border-radius: 1%;
+  font-family: "FontAwesome";
+  color: #ffffff;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  padding: 0px;
+  text-align: center;
+}
+.ft-social-network a img{
+    height: 40px;
+    width: 40px;
+}
+.footer-grid-item .footer-social .ft-social-network a:hover {
+  color:aquamarine;
+  border: 1px solid aquamarine;
+}
+
+.footer-grid-item .footer-social .ft-social-network a i {
+  margin-left: 5px;
+}
+
+/* footer */
+/* Support */
+.main-sp{
+    max-width: 750px;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+.main-sp h1, h2, h3, h4{
+    color: rgb(55, 53, 47);
+}
+.main-sp h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 30px 0;
+}
+.main-sp h2{
+    font-size: 1.875em;
+    line-height: 1.3;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.main-sp h3{
+    font-size: 1.25em;
+    line-height: 1.3;
+    padding: 10px 0;
+}
+.main-sp h4{
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.main-sp h5{
+    font-size: 16px;
+    color: rgba(68, 131, 97, 1);
+    fill: rgba(108, 155, 125, 1);
+    line-height: 1.5;
+    padding: 5px 0;
+}
+.community, .service, .privacy{
+    width: 100%;
+    display: block;
+    padding-right: 96px;
+}
+/* Support */
