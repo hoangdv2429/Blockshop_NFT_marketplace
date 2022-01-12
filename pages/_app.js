@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps }) {
                                         method="post"
                                     >
                                         <div class="input-group subscribe-form">
-                                            <input type="email" placeholder="Email address" />
+                                            <input id="mail-" type="email" placeholder="Email address" />
                                             <button type="submit">
                                                 <i class="fa fa-paper-plane"></i>
                                             </button>

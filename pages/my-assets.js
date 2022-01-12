@@ -47,8 +47,8 @@ export default function MyAssets() {
     }
     if (loadingState === 'loaded' && !nfts.length) return (<h1 className="py-10 px-20 text-3xl">No assets owned</h1>)
     return (
-        <div className='home-2'>
-            <div className="p-4">
+        <div className="home-2">
+            <div className="products">
                 <div className="my-digital">
                     <p>My Digital</p>
                 </div>

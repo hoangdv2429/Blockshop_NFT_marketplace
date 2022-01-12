@@ -9,7 +9,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.products{
+.products, .profile-{
     width: 1200px;
 }
 .item-new, .items-my-digital, .items-created-product, .items-sold-product{
@@ -24,11 +24,11 @@
     border: 0.5px solid rgb(136, 136, 136);
     border-radius: 2%;
 }
-.products-title, .items-create, .my-digital, .items-sold{
+.products-title, .items-create, .my-digital, .items-sold, .profile-title{
     text-align: center;
     margin-top: 40px;
 }
-.products-title p, .items-create p, .my-digital p, .items-sold p{
+.products-title p, .items-create p, .my-digital p, .items-sold p, .profile-title p{
     font-size: 35px;
     font-weight: 500;
     color: black;
@@ -42,7 +42,7 @@
     width: 100%;
     height: 250px;
 }
-img{
+.product img{
     object-fit: cover;
     width: 100%;
     height: 250px;
@@ -52,7 +52,114 @@ img{
 #black-p{
     border-radius: 0% 0% 2% 2%;
 }
+.dot{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.dot p{
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
 /* home */
+/* create */
+#box-1, #box-3{
+    width: 95%;
+    height: 48px;
+    padding: 16px;
+    border: 1px solid rgb(223, 223, 223);
+    margin-left: 15px;
+}
+#box-2{
+    width: 95%;
+    height: 65px;
+    padding: 16px;
+    border: 1px solid rgb(223, 223, 223);
+    margin-left: 15px;
+}
+#box-4{
+    width: 95%;
+    padding: 16px;
+    margin-left: 15px;
+}
+#box-4:hover{
+    background-color: aquamarine;
+}
+#new-img{
+    margin-left: 15px;
+}
+#new-img-2{
+    width: 95%;
+    height: 300px;
+    margin-left: 15px;
+}
+
+/* create */
+/* profile */
+.profile-table{
+    display: flex;
+}
+.set-profile{
+    margin: 100px 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.set-profile input{
+    width: 360px;
+    padding: 16px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 3%;
+
+}
+.set-profile button{
+    width: 360px;
+    border: 1px solid rgb(223, 223, 223);
+}
+.read-profile{
+    width: 600px;
+    padding: 60px;
+    margin: 30px 0px 30px 60px;
+    border-left: 0.5px solid rgb(223, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-img{
+    margin-left: 25px;
+    width: 250px;
+}
+#img-profle{
+    object-fit: contain;
+    width: 100%;
+    height: 250px;
+}
+#name-profile, #des-profile{
+    width: 420px;
+    padding: 10px 0;
+    text-align: center;
+}
+.name-2{
+    width: 160px;
+    margin-left:130px ;
+    border-bottom: 0.5px solid rgb(223, 223, 223);
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500    ;
+}
+#des-profile{
+    font-size: 20px;
+    font-weight: 350;
+}
+
+
+
+/* profile */
 /* header */
 .header-- .logo{
     margin: 0;
@@ -115,7 +222,9 @@ footer .foot-content .footer-grid {
   margin-bottom: 15px;
   font-size: 1.2rem;
 }
-
+#mail-{
+    padding: 10px;
+}
 .footer-grid-item li {
   margin: 0px 0px 5px 30px;
 }

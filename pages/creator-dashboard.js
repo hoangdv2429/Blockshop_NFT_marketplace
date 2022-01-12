@@ -71,6 +71,9 @@ export default function CreatorDashboard() {
                         ))
                     }
                 </div>
+                <div className="dot">
+                    <p>. . .</p>
+                </div>
             </div>
             <div className="products">
                 {
