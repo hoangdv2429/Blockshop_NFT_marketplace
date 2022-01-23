@@ -40,6 +40,7 @@ export default function CreatorDashboard() {
                 seller: i.seller,
                 owner: i.owner,
                 sold: i.sold,
+                name: meta.data.name,
                 image: meta.data.image,
             }
             return item
@@ -63,6 +64,9 @@ export default function CreatorDashboard() {
                             <div key={i} className="product">
                                 <div className='image-product'>
                                     <img src={nft.image} />
+                                </div>
+                                <div className="p-4">
+                                    <p style={{ height: '40px' }} className="text-2xl font-semibold">{nft.name}</p>
                                 </div>
                                 <div className="p-4 bg-black">
                                     <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>
@@ -88,6 +92,9 @@ export default function CreatorDashboard() {
                                         <div key={i} className="product">
                                             <div className='image-product'>
                                                 <img src={nft.image} />
+                                            </div>
+                                            <div className="p-4">
+                                                <p style={{ height: '40px' }} className="text-2xl font-semibold">{nft.name}</p>
                                             </div>
                                             <div id='black-p' className="p-4 bg-black">
                                                 <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>

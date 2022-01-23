@@ -85,7 +85,7 @@ export default function Profile() {
         <div className="home-3">
             <div className="profile-">
                 <div className="profile-title">
-                    <p>Profile</p>
+                    <p>My Profile</p>
                 </div>
                 <div className="profile-table">
                     <div className="set-profile">

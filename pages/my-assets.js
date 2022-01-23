@@ -38,6 +38,7 @@ export default function MyAssets() {
                 tokenId: i.tokenId.toNumber(),
                 seller: i.seller,
                 owner: i.owner,
+                name: meta.data.name,
                 image: meta.data.image,
             }
             return item
@@ -58,6 +59,9 @@ export default function MyAssets() {
                             <div key={i} className="product">
                                 <div className='image-product'>
                                     <img src={nft.image} />
+                                </div>
+                                <div className="p-4">
+                                    <p style={{ height: '40px' }} className="text-2xl font-semibold">{nft.name}</p>
                                 </div>
                                 <div id='black-p' className="p-4 bg-black">
                                     <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>
